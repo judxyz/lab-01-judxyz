@@ -13,7 +13,7 @@ public abstract class Pet {
 
     }
 
-    public Pet(Date birthDate, String name) {
+    public Pet(String name, Date birthDate) {
         this.birthDate = birthDate;
         this.name = name;
     }

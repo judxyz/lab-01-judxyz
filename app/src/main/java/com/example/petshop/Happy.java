@@ -10,6 +10,7 @@ public class Happy extends Mood{
         super(date);
     }
 
+    @Override
     public String printMood() {
         return "Current mood is Happy on " + this.getDate();
     }

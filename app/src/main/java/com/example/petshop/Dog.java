@@ -7,7 +7,7 @@ public class Dog extends Pet implements Pettable{
     }
 
     public Dog(String name, Date birthDate) {
-        super(birthDate, name);
+        super(name, birthDate);
     }
 
     @Override
@@ -15,7 +15,7 @@ public class Dog extends Pet implements Pettable{
         return "bark";
     }
     @Override
-    public void pet() {
-
+    public Void pet() {
+        return null;
     }
 }

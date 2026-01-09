@@ -25,18 +25,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Cat cat = new Cat("Lucy");
-
         Dog dog = new Dog("Snoopy");
+        Scorpion scorpion = new Scorpion("Scorponok");
+
         ArrayList<Pet> petList = new ArrayList<Pet>();
 
         // Can store both Cat and Dog objects
         // since they both inherit from Pet
         petList.add(cat);
         petList.add(dog);
+        petList.add(scorpion);
 
         ArrayList<Pettable> pettablePets = new ArrayList<Pettable>();
         pettablePets.add(cat);
         pettablePets.add(dog);
+        // pettablePets.add(scorpion); // compile error (expected)
 
     }
 
